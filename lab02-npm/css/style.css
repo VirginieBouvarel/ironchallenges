@@ -1,0 +1,75 @@
+/*
+**GLOBALS
+**styles concernant toute la page
+*/
+
+@import
+@import
+
+:root{
+    
+}
+html{
+    box-sizing:border-box; 
+    font-size:62.5% /*1rem = 10px*/
+}
+*, 
+*:before, 
+*:after{
+    box-sizing:inherit;
+    margin = 0; 
+    padding = 0; 
+} 
+body{
+    font-family:;
+    font-size:1.4rem; 
+    color:red;
+} 
+a{
+    text-decoration:none;
+} 
+img{
+    max-width:100%;
+}
+.container{
+    width:;
+    margin:0 auto;
+} 
+.flex{
+    display:flex;
+    flex-flow:row wrap;
+} 
+.background{
+    background-color:;
+}
+h1, h2, h3, h4, h5, h6 {
+    styles communs
+}
+h1{
+
+}
+h2{
+
+}
+h3{
+
+}
+h4{
+
+}
+h5{
+
+}
+h6{
+
+}
+
+/*
+**CROSS-OVER
+**styles concernant plusieurs sections
+*/
+
+/*
+**SECTIONS
+**styles propres à chaque section
+*/
