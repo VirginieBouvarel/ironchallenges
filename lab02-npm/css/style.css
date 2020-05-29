@@ -32,8 +32,9 @@ nav a{
 }
 /*HEADER*/
 .header{
-  background-color:rgb(32, 101, 136);
+  background-color: rgb(32, 101, 136);
   color:rgba(255,255,255,0.8);
+  height:650px;
 }
 .header-top{
     background-color:rgb(32, 90, 124);
@@ -75,7 +76,7 @@ nav a{
     color:rgba(255,255,255,0.8);
     text-decoration:none;
 }
-.login-link, span{
+.login-link, .or{
     position:relative;
     bottom:17px;
 }
