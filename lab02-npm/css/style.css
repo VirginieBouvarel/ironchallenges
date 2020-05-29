@@ -1,75 +1,98 @@
-/*
-**GLOBALS
-**styles concernant toute la page
-*/
-
-@import
-@import
-
-:root{
-    
-}
-html{
-    box-sizing:border-box; 
-    font-size:62.5% /*1rem = 10px*/
-}
-*, 
-*:before, 
-*:after{
-    box-sizing:inherit;
-    margin = 0; 
-    padding = 0; 
-} 
 body{
-    font-family:;
-    font-size:1.4rem; 
-    color:red;
-} 
-a{
+    margin:0;
+}
+.clearfix{
+    clear:both;
+}
+/*NAVBAR*/
+nav{
+    background-color:#c12127;
+    color:rgba(255,255,255,0.8);
+    padding:10px;
+    height:20px;
+}
+nav a{
+    color:rgba(255,255,255,0.8);
     text-decoration:none;
-} 
-img{
-    max-width:100%;
 }
-.container{
-    width:;
-    margin:0 auto;
-} 
-.flex{
-    display:flex;
-    flex-flow:row wrap;
-} 
-.background{
-    background-color:;
+.navbar-left{
+    float:left;
+    width:40%;
 }
-h1, h2, h3, h4, h5, h6 {
-    styles communs
+.navbar-right{
+    float:right;
+    width:50%;
+    padding:0;
+    margin:0;
+    text-align:right;
 }
-h1{
+.navbar-right li{
+    display:inline-block;
+    margin:0 10px;
+}
+/*HEADER*/
+.header{
+  background-color:rgb(32, 101, 136);
+  color:rgba(255,255,255,0.8);
+}
+.header-top{
+    background-color:rgb(32, 90, 124);
+    overflow:hidden;
+}
+.header h1{
+    margin:0;
+}
+.logo{
+    float:left;
+    width:5%;
+    margin:8px;
+}
+.search-form{
+    float:left;
+    margin:10px;
+    width:82%;
+}
+.search-input{
+    border:none;
+    border:1px solid rgb(32, 101, 136);
+    background-color:rgb(31, 82, 111);
+    padding:8px;
+    width:97%;
+}
+.search-btn{
+    border:none;
+    border:1px solid rgb(32, 101, 136);
+    background-color:rgb(31, 82, 111);
+    color:rgba(255,255,255,0.8);
+    padding:8px 10px 7px;
+}
+.login{
+    margin:10px;
+    width:10%;
+    float:right;
+}
+.login-link{
+    color:rgba(255,255,255,0.8);
+    text-decoration:none;
+}
+.login-link, span{
+    position:relative;
+    bottom:17px;
+}
+.bear{
+    width:21%;
+    margin-left:5px;
+}
 
-}
-h2{
 
-}
-h3{
-
-}
-h4{
-
-}
-h5{
-
-}
-h6{
-
+/*SECTION ORGS*/
+#orgs{
+    background-color:rgb(39, 53, 71);
 }
 
-/*
-**CROSS-OVER
-**styles concernant plusieurs sections
-*/
+/*SECTION WHAT-NPM*/
+#what-npm{
+    background-color:rgb(32, 101, 136);
+}
 
-/*
-**SECTIONS
-**styles propres à chaque section
-*/
+/*SECTION REGISTRY*/
