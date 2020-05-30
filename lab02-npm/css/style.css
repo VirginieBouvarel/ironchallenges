@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body{
     margin:0;
+     font-family: 'Open Sans', sans-serif;
+     font-size:12px;
+}
+p{
+    font-size:14px;
 }
 .clearfix{
     clear:both;
@@ -35,6 +42,7 @@ nav a{
   background-color: rgb(32, 101, 136);
   color:rgba(255,255,255,0.8);
   height:650px;
+  position:relative;
 }
 .header-top{
     background-color:rgb(32, 90, 124);
@@ -84,7 +92,33 @@ nav a{
     width:21%;
     margin-left:5px;
 }
-
+.header-bottom{
+    width:30%;
+    margin:0 auto;
+    position: absolute;
+    top:210px;
+    left:475px;
+}
+.city{
+    float:right;
+    width:100%;
+    height:585px;
+}
+.header-bottom h2{
+   font-size:36px;
+   font-weight:lighter;
+}
+.header-bottom p{
+    line-height:1.5;
+    margin-bottom:30px;
+}
+.header-btn{
+    background-color: rgb(240, 146, 51);
+    border:none;
+    padding:7px 20px;
+    border-radius:50px;
+    color:rgba(255,255,255,0.8);
+}
 
 /*SECTION ORGS*/
 #orgs{
@@ -93,7 +127,8 @@ nav a{
 
 /*SECTION WHAT-NPM*/
 #what-npm{
-    background-color:rgb(32, 101, 136);
+    /* background-color:rgb(32, 101, 136); */
+    background-image:url('../img/bkg/what-npm-bkg.svg');
 }
 
 /*SECTION REGISTRY*/
