@@ -2,8 +2,8 @@
 
 body{
     margin:0;
-     font-family: 'Open Sans', sans-serif;
-     font-size:12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:12px;
 }
 p{
     font-size:14px;
@@ -97,7 +97,7 @@ nav a{
     margin:0 auto;
     position: absolute;
     top:210px;
-    left:475px;
+    left:340px;
 }
 .city{
     float:right;
@@ -123,12 +123,115 @@ nav a{
 /*SECTION ORGS*/
 #orgs{
     background-color:rgb(39, 53, 71);
+    height:650px;
+    color:rgba(255,255,255,0.8);
 }
+.container{
+    width:60%;
+    margin:0 auto;
+    padding:100px;
+}
+#orgs h3{
+    font-size:30px;
+    font-weight:lighter;
+    padding-right:62px;
+    padding-top:39px;
+}
+.team{
+    width:45%;
+    float:left;
+    margin:65px;
+}
+.orgs-text ul{
+    position:relative;
+    left:35px;
+}
+.orgs-list-item{
+    font-size:14px;
+    line-height:2;
+}
+.orgs-btn{
+    background-color:rgb(203, 56, 55);
+    border:none;
+    border-radius:50px;
+    padding:7px 20px;
+    color:rgba(255,255,255,0.8);
+    margin-top:28px;
+}
+.orgs-text p{
+    font-size:12px;
+}
+.learn-more-link{
+    color:rgba(255,255,255,0.8);
+    font-size:12px;
+    text-decoration:none;
+}
+
 
 /*SECTION WHAT-NPM*/
 #what-npm{
     /* background-color:rgb(32, 101, 136); */
     background-image:url('../img/bkg/what-npm-bkg.svg');
+    height:650px;
+    position:relative;
+}
+.what-npm-text{
+    width:20%;
+    color:rgba(255,255,255,0.8);
+    position:absolute;
+    top:85px;
+    left:187px;
+}
+.what-npm-text h3{
+    font-size:30px;
+    font-weight:lighter;
+}
+.what-npm-text p{
+    padding-right:27px;
+    line-height:1.5;
+}
+.what-npm-btn{
+    background-color: rgb(49, 68, 88);
+    border:none;
+    border-radius:50px;
+    color:rgba(255,255,255,0.8);
+    padding:7px 20px;
+    margin-top:25px;
 }
 
+
 /*SECTION REGISTRY*/
+#registry{
+    text-align:center;
+    padding:50px 50px 100px;
+}
+#registry h4{
+    color:rgb(31, 82, 111);
+    font-size:25px;
+}
+.registry-description, .registry-box-text{
+    color:rgb(135, 145, 156)
+}
+#registry h5{
+    color:rgb(31, 82, 111);
+    font-size:16px;
+}
+.find-link{
+    color:rgb(208, 74, 73);
+    text-decoration:none;
+}
+.registries{
+    width:75%;
+    margin:0 auto;
+}
+.col-30{
+    float:left;
+    width:25%;
+    margin-top:50px;
+}
+.col-middle{
+    margin:50px 12.5% 0;
+}
+.registry-box-text{
+    padding:0 20px;
+}
