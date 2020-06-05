@@ -123,17 +123,17 @@ function verifyNextPosition(nextX, nextY) {
         return true;
     }
 }
-
 function isOffgrid(nextX,nextY){
+    console.log("next case :" + nextX +"/" + nextY);
     if (nextX < 0 || nextX > 9 || nextY < 0 || nextY > 9){
-        console.log("Off-grid:rover doesn't move");
+        console.log("Off-grid case " + nextX + "/" + nextY);
+        console.log("Rover doesn't move, current position:" + rover.x + "/" + rover.y);
         return true; 
     }else{
         return false;
     }
 }
 function isObstacle(nextX,nextY){
-    console.log("next case :" + nextX +"/" + nextY);
     let obstacle = false;
     for (let i = 0; i < obstacles.length; i++){
         if (nextX === obstacles[i][0] && nextY === obstacles[i][1]){
