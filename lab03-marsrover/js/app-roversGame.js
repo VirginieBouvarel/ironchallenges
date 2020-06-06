@@ -2,6 +2,8 @@
  * Mars Rovers Game
  */
 
+let winner = "";
+
 let rover0 = {
     name: "rover0",
     x: 0,
@@ -12,10 +14,10 @@ let rover0 = {
 }
 let rover1 = {
     name: "rover1",
-    x: 9,
+    x: 1,
     y: 0,
-    direction:"W",
-    path:"fffffflfflfffrffffffflffffrffff",
+    direction:"S",
+    path:"fffflfrflffffffrfffflffffffffff",
     travelLog: []
 }
 let rover2 = {
@@ -26,6 +28,7 @@ let rover2 = {
     path:"flfffrfffflfrfflffflfffffffffff",
     travelLog: []
 }
+
 
 let travelLog0 = rover0.travelLog;
 let travelLog1 = rover1.travelLog;
@@ -63,13 +66,21 @@ function buildMap(rover0, rover1, rover2){
     console.log(map);    
 }
 
-function move(rover0, rover1, rover2){
-    
-    //on lit la map: une ligne pour un tour de jeu
+function move(rover0, rover1, rover2){  
+
+    //on lit la map ligne par ligne: une ligne pour un tour de jeu
     for (let i = 0; i < map.length; i++) {
+        //On s'arrete si un winner est désigné
+        if (winner !== ""){
+            break;
+        }
         console.log("Round: " + (i+1));
         //on fait avancer chaque rover
         for (let j = 0; j < 3; j++){
+            //On s'arrete si un winner est désigné
+            if (winner !== ""){
+                break;
+            }
             //on identifie le rover concerné
             let rover;
             let travelLog;
@@ -103,7 +114,7 @@ function move(rover0, rover1, rover2){
             }
         }
         
-    }
+    }  
 }
 
 function moveForward(rover, travel) {
@@ -177,9 +188,10 @@ function turnLeft(rover) {
     }
 }
 function verifyNextPosition(rover, nextX, nextY) {
+    isTaken(rover, nextX, nextY);
     let offgrid = isOffgrid(rover, nextX, nextY);
     let obstacle = isObstacle(rover, nextX, nextY);
-
+    
     if (offgrid || obstacle){
         return false;
     }else{
@@ -207,13 +219,51 @@ function isObstacle(rover, nextX, nextY){
     }
     return obstacle;
 }
+function isTaken(rover, nextX, nextY){
+    if (rover.name === "rover0"){
+        if (nextX === rover1.x && nextY ===rover1.y){
+            console.log("BOOM! rover1 is dead!");
+            gameOver(1);
+        }else if (nextX === rover2.x && nextY === rover2.y){
+            console.log("BOOM! rover2 is dead!");
+            gameOver(2);
+        }
+    }else if (rover.name === "rover1"){
+        if (nextX === rover0.x && nextY ===rover0.y){
+            console.log("BOOM! rover0 is dead!");
+            gameOver(0);
+        }else if (nextX === rover2.x && nextY === rover2.y){
+            console.log("BOOM! rover2 is dead!");
+            gameOver(2);
+        }
+    }else{
+        if (nextX === rover1.x && nextY ===rover1.y){
+            console.log("BOOM! rover1 is dead!");
+            gameOver(1);
+        }else if (nextX === rover0.x && nextY === rover0.y){
+            console.log("BOOM! rover0 is dead!");
+            gameOver(0);
+        }
+    }
+}
+function isWinner(rover){
+    if (rover.x=== 9 && rover.y=== 9){
+        winner = rover.name;
+        console.log("The winner is: " + winner);
+    }
+}
 function roverGO(rover, nextX, nextY, travel){
     console.log("It's ok, "+ rover.name + " move forward");
     rover.x = nextX;
     rover.y = nextY;
     console.log("New position: x:" + rover.x + ", y:" + rover.y);
     travel.push([rover.x, rover.y]);
-    // travel = travel + [rover.x, rover.y];
+    isWinner(rover);
+}
+function gameOver(index){
+    for (let i = 0; i < map.length; i++){
+        map[i][index] = null;
+    }
 }
 /**************************************************************************************************************** */
 
