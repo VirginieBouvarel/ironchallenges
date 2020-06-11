@@ -1,0 +1,68 @@
+body{
+    background-color:green;
+    color:white;
+}
+.headings{
+    width:38%;
+    margin:0 auto;
+}
+.clearfix{
+    clear:both;
+}
+h1{
+    font-size:60px;
+    text-align:center;
+    text-shadow: 3px 3px 4px black;
+}
+h2{
+    text-align:center;
+    margin-bottom:50px;
+}
+.currentRover{
+    float:left;
+    font-size:25px;
+}
+.message{
+    float:right;
+    font-size:25px;
+}
+.board{
+    margin:20px auto;
+}
+tr td{
+    border:1px solid black;
+}
+td{
+    width:50px;
+    height:50px;
+    background-color: white;
+}
+
+/*on matérialise les cases obstacles avec un background différent*/
+.case3-1,
+.case7-2,
+.case2-4,
+.case6-6,
+.case1-8 {
+    background-color:crimson;
+}
+/*on matérialise la case arrivée avec un background différent*/
+.case9-9{
+    background-color:greenyellow;
+}
+
+/*style du triangle représentant un rover*/
+
+td p{
+    text-align:center;
+    font-weight:bolder;
+}
+.red{
+    color:red;
+}
+.green{
+    color:green;
+}
+.blue{
+    color:blue;
+}
