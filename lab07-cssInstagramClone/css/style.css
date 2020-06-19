@@ -5,6 +5,7 @@ light blue: #1c5380
 */
 
 body {
+  /*font: weight size/line-height family*/  
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
 }
