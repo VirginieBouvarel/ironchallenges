@@ -1,3 +1,4 @@
+/*normalize*/
 /*
 Colors to use:
 dark blue: #06365f
@@ -8,4 +9,115 @@ body {
   /*font: weight size/line-height family*/  
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+}
+.clearfix{
+  clear:both;
+}
+.page{
+  width:42.5%;
+  margin:0 auto;
+  background-color:#F7F8F8;
+}
+
+/*HEADER*/
+.header{
+  height:200px;
+  background:linear-gradient(#5980A1,#3A6387);
+  box-shadow:2px 5px 10px -3px rgba(0,0,0,0.3);
+}
+
+.logo{
+  width:28%;
+  float:left;
+  margin: 9% 8% 3% 43.7%;
+ 
+}
+.login{
+  background:linear-gradient(#fff,0.5%,#5980A1,#3A6387);
+  width:7.5%;
+  float:left;
+  color:white;
+  font-size:11px;
+  padding:7px;
+  margin-top:11%;
+  border-radius:3px;
+  border: 1px solid #3A6387;
+  /* box-shadow: 1px 2px 9px 0px #000; */
+}
+.home{
+  width:30%;
+  float:left;
+  margin-right:7px;
+  vertical-align:middle;
+}
+
+/*MAIN*/
+.phones{
+  width:29%;
+  margin-left:10%;
+  margin-top:-16.5%;
+  float:left;
+}
+.article{
+  width: 37.5%;
+  height:293px;
+  background: url(../img/frame.png) no-repeat;
+  background-size:100%;
+  margin-left: 4%;
+  margin-top: -7%;
+  float: left;
+  padding:26px 33px;
+}
+.article h2{
+  color: #06365f;
+  font-size:19px;
+  font-weight:600;
+  margin:0;
+  padding-right:37%;
+  line-height:1.4;
+}
+.text{
+  font-size:12px;
+  margin:0.8em 0;
+  color:#696969;
+}
+.bold{
+  color:#000;
+  font-weight:600;
+}
+.apple{
+  width:40%;
+  margin-top:4%;
+  margin-right:4.5%;
+}
+.google{
+  width:38%;
+  margin-top:4%;
+}
+/*FOOTER*/
+.footer{
+  overflow:hidden;
+  padding-bottom:5%;
+}
+.navbar{
+ width:50%;
+ margin:0 auto;
+}
+.navbar-item{
+  text-decoration:none;
+  text-transform:uppercase;
+  color:rgb(118, 156, 188, 0.9);
+  font-size:8px;
+  font-weight:800;
+  margin-right:2%;
+  float:left;
+  
+}
+.copyright{
+ color:#ddd;
+ font-weight:600;
+ text-transform:uppercase;
+ font-size:9px;
+ float:left;
+ margin:0 0 0 1%;
 }
