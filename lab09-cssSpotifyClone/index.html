@@ -5,55 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Spotify Clone</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar">
-        <a href="#" class="navbar-left"><img src="img/spotify-logo.png" alt="spotify logo" class="logo"></a>
-        <a href="#" class="navbar-right">Premium</a>
-        <a href="#" class="navbar-right">Discover</a>
-        <a href="#" class="navbar-right">Help</a>
-        <a href="#" class="navbar-right">Download</a>
-      </nav>
-      <h1 class="header-heading">Music for everyone.</h1>
-      <p class="header-text">Spotify is now free on mobile, tablet and computer. Listen to the
-        right music, wherever you are.</p>
-    </header>
-    <section class="infos">
-      <h2>What's on Spotify?</h2>
-      <div class="infos-boxes">
-        <div class="col-30">
-          <img src="img/icons/million-songs.png" alt="Million of songs" class="info-box-img">
-          <h3>Millions of Songs</h3>
-          <p class="info-box-text">There are millions of songs on Spotify</p>
+    <div class="page">
+      <header class="header">
+        <nav class="navbar">
+          <a href="#" class="navbar-left"><img src="img/spotify-logo.png" alt="spotify logo" class="logo"></a>
+          <a href="#" class="navbar-right">Download</a>
+          <a href="#" class="navbar-right mr-20">Help</a>
+          <a href="#" class="navbar-right mr-20">Discover</a>
+          <a href="#" class="navbar-right mr-20">Premium</a>
+        </nav>
+        <div class="clearfix"></div>
+        <h1 class="header-heading">Music for everyone.</h1>
+        <p class="header-text">Spotify is now free on mobile, tablet and computer. Listen to the
+          right music, wherever you are.</p>
+      </header>
+      <section class="infos">
+        <h2 class="infos-heading">What's on Spotify?</h2>
+        <div class="infos-boxes">
+          <div class="col-30">
+            <img src="img/icons/million-songs.png" alt="Million of songs" class="info-box-img">
+            <h3 class="info-box-heading">Millions of Songs</h3>
+            <p class="info-box-text">There are millions of songs on Spotify</p>
+          </div>
+          <div class="col-30 col-middle">
+            <img src="img/icons/hd-music.png" alt="HD Music" class="info-box-img">
+            <h3 class="info-box-heading mt-6">HD Music</h3>
+            <p class="info-box-text">Listen to music as if you were listening live</p>
+          </div>
+          <div class="col-30">
+            <img src="img/icons/stream-everywhere.png" alt="stream everywhere" class="info-box-img">
+            <h3 class="info-box-heading">Stream Everywhere</h3>
+            <p class="info-box-text">Stream music on your smartphone, tablet or computer</p>
+          </div>
         </div>
-        <div class="col-30">
-          <img src="img/icons/hd-music.png" alt="HD Music" class="info-box-img">
-          <h3>HD Music</h3>
-          <p class="info-box-text">Listen to music as if you were listening live</p>
+      </section>
+      <div class="clearfix"></div>
+      <section class="green">
+        <div class="green-container">
+          <h2 class="green-heading">It’s as yeezy as Kanye West.</h2>
+          <h3 class="green-title">Search</h3>
+          <p class="green-text">Know what you want to listen to? Just search and hit play.</p>
+          <h3 class="green-title">Browse</h3>
+          <p class="green-text">Check out the
+            latest charts, brand new releases and great playlists for right now.</p>
+          <h3 class="green-title">Discover</h3>
+          <p class="green-text">Enjoy new music every Monday with your
+            own personal playlist. Or sit back and enjoy Radio.</p>
+            <img src="img/spotify-pill.png" alt="spotify pill" class="green-spotify-pill">
         </div>
-        <div class="col-30">
-          <img src="img/icons/stream-everywhere.png" alt="stream everywhere" class="info-box-img">
-          <h3>Stream Everywhere</h3>
-          <p class="info-box-text">Stream music on your smartphone, tablet or computer</p>
-        </div>
-      </div>
-    </section>
-    <section class="green">
-      <div class="green-container">
-        <h2>It’s as yeezy as Kanye West.</h2>
-        <h3>Search</h3>
-        <p>Know what you want to listen to? Just search and hit play.</p>
-        <h3>Browse</h3>
-        <p>Check out the
-          latest charts, brand new releases and great playlists for right now.</p>
-        <h3>Discover</h3>
-        <p>Enjoy new music every Monday with your
-          own personal playlist. Or sit back and enjoy Radio.</p>
-          <img src="img/spotify-pill.png" alt="spotify pill" class="green-spotify-pill">
-      </div>
-      <img src="img/spotify-app.jpg" alt="spotify player" class="green-player">
-    </section>   
+        <img src="img/spotify-app.jpg" alt="spotify player" class="green-player">
+      </section>
+    </div>
   </body>
 </html>

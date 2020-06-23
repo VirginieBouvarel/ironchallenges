@@ -1,8 +1,171 @@
 /*
 Colors:
-
 Text: 1A1A1A
 Green: #00B172
 White: #FFF
-
 */
+
+/*NORMALIZE*/
+
+/*GLOBALS*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html{
+	font-size:62.5%;
+	box-sizing:border-box;
+}
+
+*, *:before, *:after{
+	box-sizing:inherit;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+}
+img{
+	max-width:100%;
+}
+a{
+	text-decoration:none;
+}
+.clearfix{
+    clear:both;
+}
+.page{
+    width:55.5%;/*1054/1896*/
+    margin:0 auto;
+}
+/*HEADER*/
+.header{
+    background:no-repeat center/100% url("../img/main-img.jpg");
+    height: 718px;
+}
+.navbar{
+    position:fixed;
+    background-color:#fff;
+    padding:8px;
+    overflow:hidden;
+    color:#1A1A1A;
+    width:55.5%;
+}
+.navbar-left{
+    float:left;
+    width:20%;
+}
+.navbar-right{
+    margin-top:1.2%;
+    float:right;
+    font-size:1.8rem;
+    color:#1A1A1A;
+}
+.mr-20{
+    margin-right:2.2%;
+}
+.logo{
+    width: 85%;
+    margin-left: 12%;
+}
+.header-heading{
+    margin:0;
+    text-align:center;
+    padding-top:25%;
+    padding-left:4%;
+    letter-spacing:2.5px;
+    color:#fff;
+    font-size:6rem;
+    font-weight:800;
+}
+.header-text{
+    color:#fff;
+    text-align:center;
+    font-size:2.3rem;
+    padding:0 21% 0 25%;
+}
+/*SECTION INFOS*/
+.infos{
+    margin-bottom:36%;
+}
+.infos-heading{
+    width: 26%;
+    margin: 0 auto;
+    font-size: 3rem;
+    padding-top: 3%;
+    letter-spacing: 0.8px;
+    border-bottom: 3px solid #00B172;
+}
+.infos-boxes{
+    width:90%;
+    margin:0 auto;
+    margin-top:2%;
+    text-align:center;
+}
+.col-30{
+    width:30%;
+    float:left;
+}
+.col-middle{
+    margin:0 5%;
+}
+.info-box-img{
+    width:40%;
+    margin-top:21%;
+}
+.info-box-heading{
+    color:#00B172;
+    font-size:2.5rem;
+    margin:0;
+}
+.mt-6{
+    margin-top:6%;
+}
+.info-box-text{
+    font-size:2.1rem;
+    padding:3% 12% 0 12%;
+}
+/*SECTION GREEN*/
+.green{
+    background-color:#00B172;
+    margin:2%;
+    padding:5%;
+    overflow:hidden;
+}
+.green-container{
+    float:left;
+    margin-left:3%;
+    width:48%;
+    position:relative;
+}
+.green-heading{
+    width: 82%;
+    color: #fff;
+    font-size: 2.8rem;
+    border-bottom: 3px solid #fff;
+    padding:2% 0;
+    margin:0;
+}
+.green-title{
+    color:#fff;
+    font-size:2.4rem;
+    margin-top:9%;
+}
+.green-text{
+    color:#fff;
+    font-size:2rem;
+    padding-right:28%;
+    line-height:1.3;
+    margin-bottom:2%;
+}
+.green-spotify-pill{
+    width: 24%;
+    position: absolute;
+    top: 42%;
+    left: 86%;
+}
+.green-player{
+    width:30%;
+    float:left;
+    vertical-align:middle;
+    margin-top:3.5%;
+    margin-left:16%;
+}
