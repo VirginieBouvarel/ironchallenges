@@ -1,0 +1,54 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+@font-face {
+    font-family: "circular-pro-bold";
+    src: url("../fonts/circular-pro-bold.woff2");
+}
+@font-face {
+    font-family: "circular-pro-book";
+    src: url("../fonts/circular-pro-book.woff2");
+}
+@font-face {
+    font-family: "larsseit-bold";
+    src: url("../fonts/larsseit-bold.woff2");
+}
+@font-face {
+    font-family: "larsseit-italic";
+    src: url("../fonts/larsseit-italic.woff2");
+}
+
+/**
+* GLOBALS
+*/
+:root{
+    /*colors*/
+    --bg:#F4F3F4; /*background-grey*/
+    --text:#5b5e6d;/*paragraph grey*/
+    --titles:#2C303F;/*main-titles dark-grey*/
+    --button:#192592;/*button-purple*/
+    /*fonts*/
+    --circular: "circular-pro-book";
+    --circular-bold: "circular-pro-bold";
+    --larsseit: "larsseit-italic";
+    --larsseit-bold:"larsseit-bold";
+}
+html{
+	font-size:62.5%;
+	box-sizing:border-box;
+}
+*, *:before, *:after{
+	box-sizing:inherit;
+}
+body{
+	font-family: Arial, sans-serif;
+	color:#ddd;
+	font-size:14px;
+}
+img{
+	max-width:100%;
+}
+a{
+	text-decoration:none;
+}
+
+
