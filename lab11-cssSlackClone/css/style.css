@@ -40,8 +40,8 @@ html{
 	box-sizing:inherit;
 }
 body{
-	font-family: Arial, sans-serif;
-	color:#ddd;
+	font-family: var(--circular);
+	color:var(--text);
 	font-size:14px;
 }
 img{
@@ -50,5 +50,8 @@ img{
 a{
 	text-decoration:none;
 }
-
+h1, h2{
+    color:var(--titles);
+    font-family:var(--circular-bold);
+}
 
