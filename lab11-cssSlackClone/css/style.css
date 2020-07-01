@@ -25,7 +25,7 @@
     --bg:#F4F3F4; /*background-grey*/
     --text:#5b5e6d;/*paragraph grey*/
     --titles:#2C303F;/*main-titles dark-grey*/
-    --button:#192592;/*button-purple*/
+    --blue:#192592;/*button-purple*/
     /*fonts*/
     --circular: "circular-pro-book";
     --circular-bold: "circular-pro-bold";
@@ -50,8 +50,230 @@ img{
 a{
 	text-decoration:none;
 }
-h1, h2{
+.h1-like,
+.h2-like{
     color:var(--titles);
     font-family:var(--circular-bold);
+}
+/*GENERALS*/
+.h2-like{
+    font-size:5.2rem;
+    margin:0;
+}
+.p{
+    font-size:3.5rem;
+    line-height:1.4;
+}
+.email-input{
+    width:99%;
+    padding:5% 5% 6% 4%;
+    font-size:3rem;
+    margin:7% 0 7% 0;
+    border-radius:5px;
+    border:2px solid var(--bg);
+}
+.btn{
+    width:99%;
+    font-size:2.9rem;
+    font-weight:bold;
+    text-transform:uppercase;
+    border-radius:5px;
+    padding:6% 5% 6% 4%;
+}
+.btn-blue{
+    background-color:var(--blue);
+    color:#fff;
+    border:none;
+}
+.btn-outline{
+    border:2px solid var(--blue);
+    color:var(--blue);
+    background-color:#fff;
+}
+.signin-text{
+    text-align:center;
+    font-size:3.3rem;
+    font-weight:lighter;
+    margin: 5% 0 14% -1%;
+}
+
+/*Mobile First: Extra Small screen ( width < 768px)*/
+/*--- NAV ---*/
+.nav{
+    display:flex;
+    justify-content:space-between;
+    padding:3% 3% 2% 3%;
+    border-bottom:2px solid var(--bg);
+}
+.nav-navbar{
+    display:none;
+}
+.logo{
+    width:26%;
+    margin-left:5%;
+}
+.fa-bars{
+    margin-top:2%;
+    margin-right:6.5%;
+   font-size:5rem;
+}
+/*--- HEADER ---*/
+.header{
+    display:flex;
+    flex-flow:column nowrap;
+    padding:4.5% 8% 8% 8%;
+}
+.header-img{
+    order:1;
+}
+.h1-like{
+    font-size:7rem;
+    line-height:1;
+}
+.header-p{
+    margin-top:3%; 
+}
+/*--- MAIN ---*/
+/*section company*/
+.company{
+    background-color:var(--bg);
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content:center;
+    padding: 12% 8% 8% 8%;
+    text-align:center;
+    border-top:2px solid #DCDCDC;
+    border-bottom:2px solid #DCDCDC;
+}
+
+.company-p{
+    margin:5% 0 9% 0;
+}
+.hr{
+    background-color:#DCDCDC; 
+    width:99%;
+    height:2px;
+    border:none;
+}
+.airbnb{
+    width:45%;
+    margin:19% auto 8%; 
+}
+.capital-one{
+    width:45%;
+    margin: 8% auto 8%;
+}
+.harvard{
+    width:45%;
+    margin: 10% auto 9%;
+}
+.los-angeles-time{
+    width:79%;
+    margin: 10% auto 9%;
+}
+.oracle{
+    width:51%;
+    margin:12.5% auto 12%;
+}
+.ticketmaster{
+    width:50%;
+    margin:12% auto 18%;
+}
+/*section try*/
+main{
+    border-bottom:2px solid #DCDCDC;
+}
+.try{
+    width:85%;
+    margin:11% auto 10%;
+    text-align:center;
+}
+.signin-text-try{
+    margin: 2% 0 0 -1%;
+}
+.email-input-try{
+    margin:5% 0 4% 0;
+    font-weight:200;
+}
+.btn-blue-try{
+    margin-bottom:4%;
+}
+
+/*--- FOOTER ---*/
+.footer{
+    margin-top:4%;
+}
+/*div site-map*/
+.site-map{
+    display:flex;
+    flex-flow:row wrap;
+    margin:0 auto 4%;
+}
+.list{
+    width:40%;
+    margin: 2% 3% 6% 3%;
+}
+.list-item{
+    color:var(--text);
+    font-size:3rem;
+    line-height:2;
+    list-style-type:none;
+}
+.list-item-first{
+    text-transform:uppercase;
+    font-weight:bold;
+}
+/*div-contacts*/
+.contacts{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-between;
+    background-color:var(--bg);
+    padding:2% 0 2%;
+    height:30rem;
+}
+.legals{
+    display:flex;
+    justify-content:center;
+}
+.legals-items{
+    list-style-type:none;
+    font-size:3rem;
+    font-weight:bold;
+    margin-right:7%;
+}
+.lang{
+    display:flex;
+    justify-content:center;
+}
+.socials{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+}
+.flag{
+    width:5%;
+    margin-right:2%;
+}
+.en{
+    font-size:3rem;
+    font-weight:bold;
+    margin-right:3%;
+}
+.fa-chevron-down{
+    font-size:3rem;
+}
+.social-item{
+    margin-right:6%;
+}
+.fa-twitter{
+    font-size:4.5rem;
+    margin-left:11%
+}
+.fa-facebook-f{
+    font-size:3rem;
+}
+.fa-youtube{
+    font-size:4rem;
 }
 
