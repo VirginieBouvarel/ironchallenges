@@ -22,21 +22,23 @@
         <li class="navbar-link">Why Slack?</li>
         <li class="navbar-link">Pricing</li>
         <li class="navbar-link">About Us</li>
-        <li class="navbar-link">Your Workspaces</li>
+        <li class="navbar-link navbar-link-activ">Your Workspaces</li>
       </ul>
     </nav>
     <header class="header">
       <img class="header-img" src="img/main-img.png" alt="home_work_happening" />
-      <h1 class="h1-like">Where Work Happens</h1>
-      <p class="p header-p">
-        When your team needs to kick off a project, hire a new employee, deploy
-        some code, review a sales contract, finalize next year's budget, measure
-        an A/B test, plan your next office opening, and more, Slack has you
-        covered.
-      </p>
-      <input class="email-input" type="email" placeholder="Email address">
-      <button class="btn btn-blue" type="button" name="button">Get Started</button>
-      <small class="signin-text">Already using Slack? <a class="signin-link" href="#">Sign in</a></small>
+      <div class="header-text">
+        <h1 class="h1-like">Where Work Happens</h1>
+        <p class="p header-p">
+          When your team needs to kick off a project, hire a new employee, deploy
+          some code, review a sales contract, finalize next year's budget, measure
+          an A/B test, plan your next office opening, and more, Slack has you
+          covered.
+        </p>
+        <input class="email-input email-input-header" type="email" placeholder="Email address">
+        <button class="btn btn-blue btn-blue-header" type="button" name="button">Get Started</button>
+        <small class="signin-text-header">Already using Slack? <a class="signin-link" href="#">Sign in</a></small>
+      </div> 
     </header>
     <main>
       <section class="company">
@@ -46,27 +48,34 @@
           where their work happens.
         </p>
         <button class="btn btn-outline">Discover why</button>
-        <img class="airbnb" src="img/partners/airbnb-logo.png" alt="airbnb-logo" />
-        <hr class="hr">
-        <img class="capital-one" src="img/partners/capital-one-logo.png" alt="capital-one-logo" />
-        <hr class="hr">
-        <img class="harvard" src="img/partners/harvard-logo.png" alt="harvard-logo" />
-        <hr class="hr">
-        <img class="los-angeles-time" src="img/partners/los-angeles-times-logo.png" alt="los-angeles-times-logo" />
-        <hr class="hr">
-        <img class="oracle" src="img/partners/oracle-logo.png" alt="oracle-logo" />
-        <hr class="hr">
-        <img class="ticketmaster" src="img/partners/ticketmaster-logo.png" alt="ticketmaster-logo" />
+        <div class="partners-box border-45 border-33">
+          <img class="airbnb" src="img/partners/airbnb-logo.png" alt="airbnb-logo" />
+        </div>
+        <div class="partners-box border-33">
+          <img class="capital-one" src="img/partners/capital-one-logo.png" alt="capital-one-logo" />
+        </div>
+        <div class="partners-box border-45">
+          <img class="harvard" src="img/partners/harvard-logo.png" alt="harvard-logo" />
+        </div>
+        <div class="partners-box partners-box-los-angeles-times border-33">
+          <img class="los-angeles-times" src="img/partners/los-angeles-times-logo.png" alt="los-angeles-times-logo" />
+        </div>
+        <div class="partners-box partners-box-oracle border-45 border-33">
+          <img class="oracle" src="img/partners/oracle-logo.png" alt="oracle-logo" />
+        </div>
+        <div class="partners-box partners-box-ticketmaster">
+          <img class="ticketmaster" src="img/partners/ticketmaster-logo.png" alt="ticketmaster-logo" />
+        </div>
       </section>
       <section class="try">
-        <p class="h2-like">Try it for free</p>
+        <p class="h2-like h2-like-try">Try it for free</p>
         <p class="signin-text signin-text-try">Already using Slack? <a class="signin-link" href="">Sign in</a></p>
         <input class="email-input email-input-try" type="email" placeholder="Email address">
         <button class="btn btn-blue btn-blue-try" type="button" name="button">Get started</button>
       </section>
     </main>
     <footer class="footer">
-      <img class="lack-logo-footer" src="img/slack/salck-iso.png" alt="slack" />
+      <img class="slack-logo-footer" src="img/slack/salck-iso.png" alt="slack" />
       <div class="site-map">
         <ul class="list">
           <li class="list-item list-item-first">Company</li>
@@ -108,7 +117,7 @@
           <li class="legals-items">Privacy & Terms</li>
           <li class="legals-items">Contact Us</li>
         </ul>
-        <div class="lang">
+        <div class="lang push-right">
             <img class="flag" src="img/us-flag.png" alt="us-flag" />
             <span class="en">English (US)</span>
             <i class="fas fa-chevron-down"></i>
