@@ -167,6 +167,6 @@ To do that, the correct workflow is the one used on [TDD](https://en.wikipedia.o
 
 This process has to be done for each test. **Do not uncomment all the tests and launch the app. It will be more difficult for you to see if your code is passing the tests.**
 
-As we said, this is the first step to become a better developer. 
-
+As we said, this is the first step to become a better developer! 
+ 
 Good luck to all of you and happy coding. :heart:
