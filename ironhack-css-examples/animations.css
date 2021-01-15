@@ -1,0 +1,189 @@
+.container {
+    margin: 20px 0 0 20px;
+    display: flex;
+  }
+
+/*
+animation: [animation-name] [animation-duration] [animation-timing-function]
+[animation-delay] [animation-iteration-count] [animation-direction]
+[animation-fill-mode] [animation-play-state];
+*/
+  
+/**
+* Make the circle bounce forever
+*/
+.circle {
+    background: #456789;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    animation:bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce{
+    0%{
+        position:relative;
+    }
+    50%{
+        position:relative;
+        top:1rem;
+    }
+    75%{
+        position:relative;
+        top:0.5rem;
+    }
+    100%{
+        position:relative;
+        top:1rem;
+    }
+}
+
+/**
+* With a 5s delay, make the square fly to the right
+*/
+.square {
+    background: #456789;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    transition:transform 3s ease-in-out;
+}
+.square:hover{
+    transform:rotate(180deg);
+}
+
+/**
+* Make the triangle move in zigzags to the bottom of the page and then come back to its actual position
+*/
+.triangle {
+    margin: 10px;
+    border-style: solid;
+    border-color: transparent transparent #456789 transparent;
+    border-width: 0 20px 30px 20px;
+    animation: zigzag 3s ease-in-out;
+}
+
+@keyframes zigzag{
+    0%{
+        position:relative;
+    }
+    10%{
+        position:relative;
+        top:1rem;
+        left:2rem;
+    }
+    20%{
+        position:relative;
+        top:2rem;
+        left:-2rem;
+    }
+    30%{
+        position:relative;
+        top:3rem;
+        left:2rem;
+    }
+    40%{
+        position:relative;
+        top:4rem;
+        left:-2rem;
+    }
+    50%{
+        position:relative;
+        top:5rem;
+        left:2rem;
+    }
+    60%{
+        position:relative;
+        top:6rem;
+        left:-2rem;
+    }
+    70%{
+        position:relative;
+        top:7rem;
+        left:2rem;
+    }
+    80%{
+        position:relative;
+        top:8rem;
+        left:-2rem;
+    }
+    90%{
+        position:relative;
+        top:9rem;
+        left:2rem;
+    }
+    100%{
+        position:relative;
+        top:0;
+        left:0;
+    }
+}
+
+/**
+* Advance and enlarge the circle, then return to its starting state
+*/
+.circle2 {
+    background: #456789;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    animation: waouh 3s ease-in-out;
+}
+
+@keyframes waouh{
+    0%{
+        position:relative;
+    }
+    10%{
+        position:relative;
+        left:2rem;
+        transform:scale(1);
+    }
+    20%{
+        position:relative;
+        left:4rem;
+        transform:scale(2);
+    }
+    30%{
+        position:relative;
+        left:6rem;
+        transform:scale(3);
+    }
+    40%{
+        position:relative;
+        left:8rem;
+        transform:scale(4);
+    }
+    50%{
+        position:relative;
+        left:10rem;
+        transform:scale(5);
+    }
+    60%{
+        position:relative;
+        left:12rem;
+        transform:scale(6);
+    }
+    70%{
+        position:relative;
+        left:14rem;
+        transform:scale(7);
+    }
+    80%{
+        position:relative;
+        left:16rem;
+        transform:scale(8);
+    }
+    90%{
+        position:relative;
+        left:18rem;
+        transform:scale(9);
+    }
+    100%{
+        position:relative;
+        left:20rem;
+        transform:scale(10);
+    }
+}
