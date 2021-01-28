@@ -7,10 +7,10 @@ Les fameux labs de l'école Ironhack sont disponibles sur le [github](https://gi
 
 - [**Superskydive**](https://virginiebouvarel.github.io/ironhack_labs/lab01-cssSuperskydive/) : Maquette d'un site de saut en parachute
 - [**NPM Clone**](https://virginiebouvarel.github.io/ironhack_labs/lab02-cssNpm/): Clone de la page d'accueil du site Npm
-- [**Recipes Clone**](https://virginiebouvarel.github.io/ironhack_labs/lab05-cssRecipesClone/) : Maquette d'une recette de cuisine
+- [**Apple Pie Recipe**](https://virginiebouvarel.github.io/ironhack_labs/lab05-cssRecipesClone/apple-pie/) : Maquette d'une recette de tarte aux pommes
 - [**Instagram Clone**](https://virginiebouvarel.github.io/ironhack_labs/lab07-cssInstagramClone/) : Clone d'une image de l'interface d'instagram
-- [**Spotify Clone**](https://virginiebouvarel.github.io/ironhack_labs/lab07-cssSpotifyClone/) : Clone de la page d'accueil du site Spotify
-- [**Slack Clone**](https://virginiebouvarel.github.io/ironhack_labs/lab07-cssSlackClone/) : Clone de la page d'accueil du site Slack
+- [**Spotify Clone**](https://virginiebouvarel.github.io/ironhack_labs/lab09-cssSpotifyClone/) : Clone de la page d'accueil du site Spotify
+- [**Slack Clone**](https://virginiebouvarel.github.io/ironhack_labs/lab11-cssSlackClone/) : Clone de la page d'accueil du site Slack
 
 ## Live des labs javascript avec rendu html
 - [**Iron cart**](https://virginiebouvarel.github.io/ironhack_labs/lab13-jsIroncart/) : Réalisation d'un panier e-commerce
